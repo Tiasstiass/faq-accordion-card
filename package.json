@@ -1,0 +1,22 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiasstiass/faq-accordion-card-main.git"
+  },
+  "author": "Tiass",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiasstiass/faq-accordion-card-main/issues"
+  },
+  "homepage": "https://github.com/Tiasstiass/faq-accordion-card-main#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

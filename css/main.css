@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* GRADIENT */
+/* TEXT COLOR*/
+/* DIVIDERS COLOR */
+/* FONTS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #af67e9, #6565e7);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem; }
+
+main {
+  height: 33.5rem;
+  width: 20.375rem;
+  padding-top: 8.6rem;
+  background-color: #fff;
+  border-radius: 1.5625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%); }
+  main .container-content {
+    width: 85%;
+    margin: 0 auto; }
+  main .question-container {
+    margin-bottom: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer; }
+  main .hero-img {
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-55%);
+    z-index: 10; }
+  main .hero-img__pattern {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%); }
+  main h1 {
+    text-align: center;
+    margin-bottom: 1.1em;
+    font-size: 2rem;
+    color: #1d1e35; }
+  main h2 {
+    font-size: calc(13.04px + (14.08 - 13.04) * (100vw - 375px) / (1440 - 375));
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+    color: #4a4b5e; }
+  main h2:hover {
+    color: #f47c57;
+    transition: color 0.1s ease-in-out; }
+  main hr {
+    margin-bottom: 1rem;
+    background-color: #e7e7e9;
+    height: 1px;
+    border: 0; }
+  main p {
+    max-width: 35ch;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    color: #787887;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0; }
+
+@media (min-width: 992px) {
+  main::after {
+    content: url(/images/illustration-box-desktop.svg);
+    position: absolute;
+    top: 13rem;
+    left: -6.25rem;
+    z-index: 10; }
+  main {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 4.5rem 0 0 0;
+    transform: translate(-50%, -50%);
+    height: 31.75rem;
+    width: 57.5rem; }
+    main .container-content {
+      width: 20.8125rem;
+      margin-right: 6.8rem; }
+    main h1 {
+      margin-bottom: 2.4rem;
+      text-align: left; }
+    main hr {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem; }
+    main .hero-img {
+      top: 14%;
+      left: 19.5%; }
+    main .hero-img__pattern {
+      width: 100%;
+      top: -52%;
+      left: -7%; } }
+
+.active .arrow {
+  transform: rotate(180deg);
+  transition: all 0.3s ease; }
+
+.active .question {
+  font-weight: 700 !important; }
+
+.active .answer {
+  height: 100%;
+  visibility: visible; }
